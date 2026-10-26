@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "lib": ["es2022", "dom"],
+    "types": ["node"],
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "paths": {
+      "expo/fetch": ["./node-fetch.ts"],
+      "expo-secure-store": ["./secure-store-memory.ts"]
+    }
+  },
+  "include": ["*.ts", "../../src/services/**/*.ts"]
+}
